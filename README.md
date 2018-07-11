@@ -4,14 +4,14 @@ Plugin for Meteor Up to setup and run Redis. Redis is run as LRU cache with `--m
 
 ## Use
 
-Install with `npm i -g mup-redis`.
+Install with `npm i --save mup-redis-lru`.
 Then, add to the `plugins` array in your mup config, and add a `redis` object.
 
 ```js
 module.exports = {
   // rest of config
 
-  plugins: ['mup-redis'],
+  plugins: ['mup-redis-lru'],
   redis: {
     // Server to run redis on.
     servers: { one: {} },
