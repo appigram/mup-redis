@@ -22,4 +22,4 @@ sudo docker run \
   --volume $REDIS_DIR/data:/data \
   --name=redis \
   redis:$REDIS_VERSION \
-  redis-server --appendonly yes
+  redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru

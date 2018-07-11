@@ -1,6 +1,6 @@
 # mup-redis
 
-Plugin for Meteor Up to setup and run Redis. Redis is run with `--appendonly yes` for persistance.
+Plugin for Meteor Up to setup and run Redis. Redis is run as LRU cache with `--maxmemory 256mb --maxmemory-policy allkeys-lru`.
 
 ## Use
 
@@ -16,7 +16,7 @@ module.exports = {
     // Server to run redis on.
     servers: { one: {} },
     // Version of redis. Add '-alpine' to use a much smaller docker image
-    version: '3.2.10-alpine'
+    version: '4.0.10-alpine'
   }
 }
 ```

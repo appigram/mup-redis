@@ -1,23 +1,23 @@
 {
-  "name": "mup-redis",
+  "name": "mup-redis-lru",
   "version": "0.2.1",
-  "description": "Plugin for Meteor Up to add support for redis",
+  "description": "Plugin for Meteor Up to add support for redis (LRU)",
   "main": "index.js",
   "scripts": {
     "test": "eslint ."
   },
-  "author": "zodern",
+  "author": "appigram",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zodern/mup-redis.git"
+    "url": "https://github.com/appigram/mup-redis-lru.git"
   },
   "keywords": [
     "meteor-up",
-    "redis"    
+    "redis"
   ],
-  "homepage": "https://github.com/zodern/mup-redis",
-  "bugs": "https://github.com/zodern/mup-redis/issues",
+  "homepage": "https://github.com/appigram/mup-redis-lru",
+  "bugs": "https://github.com/appigram/mup-redis-lru/issues",
   "dependencies": {
     "joi": "^10.6.0"
   },
